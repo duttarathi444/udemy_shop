@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/duttarathi444/udemy_shop/issues"
   },
-  "homepage": "https://github.com/duttarathi444/udemy_shop#readme"
+  "homepage": "https://github.com/duttarathi444/udemy_shop#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
 }
