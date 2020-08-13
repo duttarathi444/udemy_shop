@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/duttarathi444/udemy_shop.git"
   },
-  "author": "",
+  "author": "Rathin",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/duttarathi444/udemy_shop/issues"
@@ -18,5 +18,8 @@
   "homepage": "https://github.com/duttarathi444/udemy_shop#readme",
   "devDependencies": {
     "nodemon": "^2.0.4"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
   }
 }
