@@ -1,7 +1,8 @@
 var express = require('express');
-var body_parser = require('body-parser');
+var bodyParser = require('body-parser');
 
 var app = express();
+app.use(bodyParser.urlencoded({ extended: false }));
 
 app.use('/', (req, res, next) => {
     res.send('hello World');
