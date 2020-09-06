@@ -4,3 +4,12 @@ exports.getAddProduct = (req, res, next) => {
         path: '/admin/add-product'
     });
 }
+
+exports.postAddProduct = (req, res, next) => {
+    const title = req.body.title;
+    const imageurl = req.body.imageUrl;
+    const price = req.body.price;
+    const description = req.body.description;
+    console.log(title);
+    res.redirect('/');
+}
