@@ -5,3 +5,5 @@ exports.getIndex = (req, res, next) => {
         prods: []
     })
 }
+
+exports
