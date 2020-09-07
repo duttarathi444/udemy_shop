@@ -33,4 +33,7 @@ module.exports = class Product {
             });
         })
     }
+    fetchAll(cb) {
+        getProductsFromFile(cb)
+    }
 }

@@ -1,7 +1,11 @@
+var Product = require('../models/product');
 exports.getIndex = (req, res, next) => {
-    res.render('shop/index', {
-        pageTitle: 'Shop',
-        path: '/products',
-        prods: []
+    var product = new Product();
+    product.fetchAll(product => {
+        res.render('shop/index', {
+            pageTitle: 'Shop',
+            path: '/products',
+            prods: product
+        })
     })
 }
