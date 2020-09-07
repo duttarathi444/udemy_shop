@@ -9,3 +9,14 @@ exports.getIndex = (req, res, next) => {
         })
     })
 }
+
+exports.getProducts = (req, res, next) => {
+    var product = new Product();
+    product.fetchAll(product => {
+        res.render('shop/product-list', {
+            prods: product,
+            pageTitle: 'All Product',
+            path: '/products'
+        })
+    })
+}
