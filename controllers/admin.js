@@ -15,3 +15,14 @@ exports.postAddProduct = (req, res, next) => {
     product.save();
     res.redirect('/');
 }
+
+exports.getProducts = (req, res, next) => {
+    const product = new Product();
+    product.fetchAll(product => {
+        res.render('admin/products', {
+            pageTitle: 'Admin Products',
+            path: '/products',
+            prods: product
+        })
+    })
+}
