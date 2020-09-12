@@ -26,3 +26,7 @@ exports.getProducts = (req, res, next) => {
         })
     })
 }
+
+exports.getEditProduct = (req, res, next) => {
+
+}

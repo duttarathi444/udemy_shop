@@ -19,7 +19,8 @@ const getProductsFromFile = cb => {
 }
 
 module.exports = class Product {
-    constructor(title, imageurl, price, description) {
+    constructor(id, title, imageurl, price, description) {
+        this.id = id;
         this.title = title;
         this.imageurl = imageurl;
         this.price = price;
@@ -27,6 +28,10 @@ module.exports = class Product {
     }
     save() {
         getProductsFromFile(products => {
+            if (this.id) {
+                const existingProductIndex = products.findIndex(prod => prod.id === this.id);
+            }
+
             products.push(this);
             fs.writeFile(p, JSON.stringify(products), err => {
                 console.log(err);
