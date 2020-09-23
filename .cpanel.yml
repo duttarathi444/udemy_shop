@@ -1,5 +1,0 @@
----
-deployment:
-  tasks:
-    - export DEPLOYPATH=/home/user/public_html/udemy_shop
-    - /bin/cp -R images $DEPLOYPATH
